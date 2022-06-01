@@ -1,5 +1,5 @@
 ﻿# Taxi-Service :taxi: <a id="anchor"></a>
-## Descriptions:
+## Description:
 This project is a simple realization of "Taxi service" system.
 User can sign up as a driver. Driver can see and manage information about available cars. 
 The project is N-tier application with:
