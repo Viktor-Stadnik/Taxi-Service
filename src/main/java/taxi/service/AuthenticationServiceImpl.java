@@ -19,6 +19,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         logger.info("login method was called. Params: login ={}", login);
         Optional<Driver> driver = driverService.findByLogin(login);
         if (driver.isEmpty() || !driver.get().getPassword().equals(password)) {
+            logger.error("Unable to authenticate. Params: login ={}", login);
             throw new AuthenticationException("Login or Password no correct");
         }
         return driver.get();
